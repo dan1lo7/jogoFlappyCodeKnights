@@ -69,9 +69,9 @@ function jump() {
 }
 
 // Adiciona um ouvinte de eventos para o teclado
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   // Verifica se a tecla pressionada é a barra de espaço
-  if (event.code === "Space") { 
+  if (event.code === "Space") {
     jump(); // Se sim, chama a função de pulo
   }
 });

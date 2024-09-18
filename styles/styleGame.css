@@ -3,7 +3,8 @@
   margin: 0; /* Remove a margem padrão de todos os elementos */
 }
 
-body, html {
+body,
+html {
   height: 100%; /* Define a altura do body e html para 100% da tela */
 }
 
@@ -35,7 +36,11 @@ main {
   width: 920px; /* Define a largura do contêiner do jogo */
   height: 600px; /* Define a altura do contêiner do jogo */
   position: relative; /* Define o posicionamento relativo para elementos filhos */
-  background-color: rgb(94, 255, 0); /* Define a cor de fundo do contêiner do jogo */
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* Define a cor de fundo do contêiner do jogo */
   overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o contêiner */
 }
 
@@ -44,7 +49,9 @@ main {
   height: 40px; /* Define a altura do pássaro */
   background-color: yellow; /* Define a cor de fundo do pássaro como amarelo */
   position: relative; /* Define o posicionamento relativo do pássaro */
-  top: calc(50% - 20px); /* Centraliza verticalmente o pássaro dentro do contêiner */
+  top: calc(
+    50% - 20px
+  ); /* Centraliza verticalmente o pássaro dentro do contêiner */
   left: 230px; /* Define a posição horizontal do pássaro */
 }
 
