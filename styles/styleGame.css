@@ -1,55 +1,55 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+  box-sizing: border-box; /* Define o modelo de caixa para incluir padding e borda no tamanho total */
+  margin: 0; /* Remove a margem padrão de todos os elementos */
 }
 
-body,html {
-  height: 100%;
+body, html {
+  height: 100%; /* Define a altura do body e html para 100% da tela */
 }
 
 main {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
+  height: 100%; /* Define a altura do main para 100% da tela */
+  width: 100%; /* Define a largura do main para 100% da tela */
+  display: flex; /* Usa flexbox para layout */
+  justify-content: center; /* Centraliza horizontalmente os itens */
+  align-items: center; /* Centraliza verticalmente os itens */
+  background-color: aqua; /* Define a cor de fundo como aqua */
 }
 
 #leftArea {
-  height: 100%;
-  flex-grow: 1;
-  flex-basis: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%; /* Define a altura da área esquerda para 100% da tela */
+  flex-grow: 1; /* Permite que a área esquerda cresça para ocupar espaço disponível */
+  flex-basis: 0; /* Inicialmente, a área esquerda não ocupa espaço */
+  display: flex; /* Usa flexbox para layout na área esquerda */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo na área esquerda */
+  align-items: center; /* Centraliza verticalmente o conteúdo na área esquerda */
 }
 
 #rightArea {
-  height: 100%;
-  flex-grow: 1;
-  flex-basis: 0;
+  height: 100%; /* Define a altura da área direita para 100% da tela */
+  flex-grow: 1; /* Permite que a área direita cresça para ocupar espaço disponível */
+  flex-basis: 0; /* Inicialmente, a área direita não ocupa espaço */
 }
 
 #gameContainer {
-  width: 920px;
-  height: 600px;
-  position: relative;
-  background-color: rgb(94, 255, 0);
-  overflow: hidden;
+  width: 920px; /* Define a largura do contêiner do jogo */
+  height: 600px; /* Define a altura do contêiner do jogo */
+  position: relative; /* Define o posicionamento relativo para elementos filhos */
+  background-color: rgb(94, 255, 0); /* Define a cor de fundo do contêiner do jogo */
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o contêiner */
 }
 
 #bird {
-  width: 80px;
-  height: 40px;
-  background-color: yellow;
-  position: absolute;
-  top: calc(50% - 20px);
-  left: 0;
+  width: 80px; /* Define a largura do pássaro */
+  height: 40px; /* Define a altura do pássaro */
+  background-color: yellow; /* Define a cor de fundo do pássaro como amarelo */
+  position: relative; /* Define o posicionamento relativo do pássaro */
+  top: calc(50% - 20px); /* Centraliza verticalmente o pássaro dentro do contêiner */
+  left: 230px; /* Define a posição horizontal do pássaro */
 }
 
-#gameStatus{
-  color: green;
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
+#gameStatus {
+  color: rgb(0, 0, 0); /* Define a cor do texto de status do jogo como verde */
+  font-size: 30px; /* Define o tamanho da fonte do texto de status do jogo */
+  font-family: "Courier New", Courier, monospace; /* Define a fonte do texto de status do jogo */
 }
